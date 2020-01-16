@@ -1,0 +1,58 @@
+<html>
+
+<head>
+
+  
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+
+<body>
+  <div class="container py-5">
+    <div class="form-group">
+      <label for="">productName</label>
+      <input id="productNameInp" class="form-control" type="text" name="" >
+      <small class="text-muted ">productName must be between 2-8</small>
+    </div>
+    <div class="form-group">
+      <label for="">productPrice</label>
+      <input id="productPriceInp" class="form-control" type="text" name="" >
+      <small class="text-muted ">price must be between 20-1000</small>
+
+    </div>
+    <div class="form-group">
+        <label>ProductCategory </label>
+        <select id="productsCategory">
+        </select>
+    </div>
+    <div class="form-group">
+      <label for="">Desc</label>
+      <textarea id="ProductDescInp" class="form-control" type="text" name="" ></textarea>
+      
+
+    </div>
+    <div class="form-group">
+      <input type="radio" value="true" name="sale">sale
+      <input type="radio" value="false" name="sale">nosale
+    </div>
+    <button onclick="addProduct()" class="btn btn-outline-info mt-3">add product</button>
+  </div>
+  <div class="container py-5">
+    
+      <h2 class="text-center">Our products</h2>
+      <div class="searchPart py-3">
+          <input onkeyup="searchProduct(this.value)" type="text" class="form-control w-50 mx-auto" placeholder="search..">
+        </div>
+      <div class="row" id="productsRow">
+              
+      </div>
+  </div>
+        
+        
+      
+    
+  <script src="js/first.js"></script>
+</body>
+</html>
